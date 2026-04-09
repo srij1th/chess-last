@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chess Game</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="game">
+  <div class="container wide card">
+    <h1>Chess Board</h1>
+    <p id="turnText">Turn: White</p>
+    <p id="statusText" class="message"></p>
+
+    <div class="game-layout">
+      <div id="board" class="board"></div>
+      <div class="move-log card-lite">
+        <h3>Move Log</h3>
+        <ol id="moveLogList"></ol>
+      </div>
+    </div>
+
+    <div class="row">
+      <button id="refreshBtn">Refresh Board</button>
+      <button id="backDashboardBtn" class="secondary">Back to Dashboard</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Settings</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="settings">
+  <div class="container card">
+    <h1>Settings</h1>
+    <label>Keybinding Style</label>
+    <select id="keybindingStyle">
+      <option value="0">Algebraic (e2 e4)</option>
+      <option value="1">Numeric (2 5 4 5)</option>
+    </select>
+
+    <label>Board Theme</label>
+    <select id="boardStyle">
+      <option value="0">Classic</option>
+      <option value="1">Blue</option>
+    </select>
+
+    <label>App Theme</label>
+    <select id="themeMode">
+      <option value="light">Light Mode</option>
+      <option value="dark">Dark Mode</option>
+    </select>
+
+    <div class="row">
+      <button id="saveSettingsBtn">Save Settings</button>
+      <button id="backBtn" class="secondary">Back</button>
+    </div>
+    <button id="resetStatsBtn" class="danger">Reset Stats</button>
+    <p id="message" class="message"></p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
